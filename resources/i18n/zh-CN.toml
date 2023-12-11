@@ -1,0 +1,40 @@
+[main.info]
+version = """
+Kara 启动器 版本 ${version}
+skjsjhb 作品
+欢迎使用 Kara 启动器！
+程序漏洞和建议请提交到 https://github.com/skjsjhb/KaraLauncher/issues"""
+
+[main.common.error]
+message = "错误：${message}"
+cause = "原因：${message}"
+
+[main.net.proxy-man]
+set-http = "HTTP 代理设定为 ${url}"
+set-https = "HTTPS 代理设定为 ${url}"
+
+[main.fs.hash-failed]
+message = "无法计算校验和： ${src}"
+
+[main.downloader.download-content]
+start = "正在下载 ${url} 到 ${dest}"
+invalid-status = "无效状态码 ${status}"
+fetch-error = "无法完成 Fetch 请求"
+empty-body = "服务器未返回数据"
+pipe-error = "无法写入 ${dest}"
+done = "已下载 ${url} 到 ${dest}"
+disable-mirror = "禁用镜像 ${mirror}，改用 ${origin}"
+retry = "正在重试 ${url}，已失败 ${i} 次"
+fail = "下载 ${url} 失败但可以重试"
+failed = "已放弃下载 ${url}，失败了 ${i} 次"
+timeout = "连接 ${url} 响应超时：${t}ms"
+
+connect = "正在 Fetch ${url}，超时设定为 ${timeout}ms"
+res = "取得 ${url} 的响应 ${status}"
+pipe = "正在 Pipe ${url} 到 ${dest}，速率不低于 ${minSpeed}"
+
+[main.downloader.validate-file]
+mismatch = "校验和不匹配：${f}，应为 ${expected} 但计算结果是 ${actual}"
+
+[main.speed-meter.speed-too-low]
+message = "传输速度低于预期的 ${minSpeed}"

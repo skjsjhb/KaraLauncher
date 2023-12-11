@@ -1,0 +1,6 @@
+{
+  "name": "skjsjhb.kara-launcher",
+  "version": "1.0.0",
+  "loader": "client.js",
+  "main": "main.js"
+}

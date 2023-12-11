@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "jsx": "react",
+    "experimentalDecorators": true,
+    "module": "ESNext",
+    "allowJs": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "downlevelIteration": true,
+    "skipLibCheck": true,
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "paths": {
+      "@/*": [
+        "./src/main/*"
+      ]
+    }
+  },
+  "include": [
+    "./src/**/*",
+    "./test/**/*"
+  ]
+}
